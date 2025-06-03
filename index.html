@@ -21,18 +21,24 @@
     header {
       padding: 1rem 2rem;
       background-color: #2a2a2a;
+      text-align: center;
     }
 
     header h1 {
-      font-size: 2.5rem; /* Increased size */
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 0;
     }
 
     .search-bar {
       padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
     }
 
     .search-bar input {
       width: 100%;
+      max-width: 500px;
       padding: 0.75rem;
       border-radius: 0.5rem;
       border: none;
@@ -159,8 +165,7 @@
         </div>
       </div>
     </a>
-  </div>
-  <div class="mod-list">
+
     <a class="mod-card" href="2.html">
       <img class="mod-icon" src="https://i.ibb.co/5XM35JZN/20250603-183505.png" alt="Vaxer FPS">
       <div class="mod-info">
@@ -168,6 +173,20 @@
         <p>Lightweight Performance Boost Modpack ( Non Survival ) 1.21.5 </p>
         <div class="tags">
           <span class="tag">Non Survival</span>
+          <span class="tag">Lightweight</span>
+          <span class="tag">FPS Boost</span>
+          <span class="tag">Modpack</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="mod-card" href="3.html">
+      <img class="mod-icon" src="https://i.ibb.co/0VmQJm04/20250604-033933.jpg" alt="VeloBoost">
+      <div class="mod-info">
+        <h3>VeloBoost</h3>
+        <p>Lightweight Fabric 1.21.4 performance modpack</p>
+        <div class="tags">
+          <span class="tag">Utility</span>
           <span class="tag">Lightweight</span>
           <span class="tag">FPS Boost</span>
           <span class="tag">Modpack</span>
@@ -184,17 +203,18 @@
 
   <script>
     const searchInput = document.querySelector('.search-bar input');
-    const modCards = document.querySelectorAll('.mod-card');
     const noResults = document.getElementById('no-results');
 
     searchInput.addEventListener('input', () => {
       const query = searchInput.value.trim().toLowerCase();
+      const modCards = document.querySelectorAll('.mod-card');
       let visibleCount = 0;
 
       modCards.forEach(card => {
-        const title = card.querySelector('h3').textContent.toLowerCase();
+        const rawTitle = card.querySelector('h3').textContent;
+        const spacedTitle = rawTitle.replace(/([a-z])([A-Z])/g, '$1 $2').toLowerCase();
         const tags = Array.from(card.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
-        const combined = title + ' ' + tags;
+        const combined = spacedTitle + ' ' + tags;
 
         if (combined.includes(query)) {
           card.style.display = 'flex';
