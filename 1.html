@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>
+   VOID OPTIMIZER | VoidRinth
+  </title>
+<style>
+   @font-face{font-family:'Minecraft';src:url('https://raw.githubusercontent.com/IdreesInc/Minecraft-Font/master/Minecraft.ttf') format('truetype')} :root{--bg-dark:#1a1a1a;--bg-light:#2a2a2a;--text-light:#f0f0f0;--text-muted:#aaaaaa;--primary:#ffffff} *{box-sizing:border-box;margin:0;padding:0;font-family:'Minecraft',monospace;font-size:11px} body{background-color:var(--bg-dark);color:var(--text-light);line-height:1.6} header{display:flex;align-items:center;gap:1rem;padding:1.5rem 2rem;background-color:var(--bg-light);border-radius:1rem;margin-bottom:1rem} header a img{width:48px;height:48px} .header-info h1, .header-info p{margin-bottom:0.5rem} .tags{display:flex;gap:0.5rem;margin-top:0.5rem} .tag{display:flex;align-items:center;background-color:#333;color:white;padding:0.25rem 0.5rem;border-radius:0.5rem;font-size:0.75rem;gap:0.3rem} .tag-icon{display:flex;width:16px;height:16px;stroke:#fff} .actions{display:flex;gap:1rem;padding:1rem 2rem;background-color:var(--bg-light);border-radius:1rem;margin-bottom:1rem} .actions button{background-color:var(--bg-dark);color:white;padding:0.5rem 1rem;border:none;border-radius:0.5rem;font-weight:bold;cursor:pointer;transition:background-color 0.3s ease} .actions button:hover{background-color:#444} .tabs{display:flex;padding:0 2rem;background-color:var(--bg-light);border-radius:1rem;margin-bottom:1rem} .tab{padding:1rem;color:var(--text-muted);cursor:pointer} .tab.active{color:white;font-weight:bold} .content{padding:2rem;background-color:var(--bg-dark)} .section{margin-bottom:2rem;padding:1.5rem;background-color:var(--bg-light);border-radius:1rem} .section h2, .section p{margin-bottom:0.5rem} .meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;font-size:0.8rem;margin-top:0.5rem} .meta-grid div{background-color:#333;padding:0.75rem;border-radius:1rem} a{color:#9dbdfc;text-decoration:none} footer{text-align:center;color:var(--text-muted);font-size:0.7rem;padding:2rem} #overlay{position:fixed;inset:0;background-color:rgba(0,0,0,0.85);display:none;justify-content:center;align-items:center;z-index:1000;padding:1rem} #overlay.active{display:flex} #overlay .overlay-box{background-color:var(--bg-light);padding:2rem;border-radius:1rem;max-width:400px;width:100%;text-align:center;color:var(--text-light);font-size:1rem} #overlay .overlay-box h2{margin-bottom:1rem;color:white} #overlay .overlay-box p{margin-bottom:1.5rem;color:var(--text-muted)} #overlay .buttons{display:flex;justify-content:center;gap:1rem} #overlay button{padding:0.5rem 1.5rem;border:none;border-radius:0.5rem;font-weight:bold;cursor:pointer;font-size:1rem;transition:background-color 0.3s ease} #overlay .continue-btn{background-color:#0099ff;color:white} #overlay .continue-btn:hover{background-color:#007acc} #overlay .cancel-btn{background-color:#555;color:white} #overlay .cancel-btn:hover{background-color:#333}
+  </style>
+</head>
+<body>
+<header>
+<a href="https://ibb.co/5x9yBKcd">
+<img alt="20250601-214257" border="0" src="https://i.ibb.co/Hp2snhg0/20250601-214257.png"/>
+</a>
+<div class="header-info">
+<h1>
+     VOID OPTIMIZER
+    </h1>
+<p>
+     Ultra-light Fabric 1.21 performance modpack • Version 1.0
+    </p>
+<div class="tags">
+<span class="tag">
+<span aria-hidden="true" class="tag-icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect height="10" rx="2" ry="2" width="16" x="4" y="7">
+</rect>
+<path d="M9 7V5a3 3 0 0 1 6 0v2">
+</path>
+</svg>
+</span>
+      Utility
+     </span>
+<span class="tag">
+<span aria-hidden="true" class="tag-icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 20l20-14-7 14-6-6-7 6z">
+</path>
+</svg>
+</span>
+      Lightweight
+     </span>
+<span class="tag">
+<span aria-hidden="true" class="tag-icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="M12 12l6-3">
+</path>
+<path d="M12 2a10 10 0 0 1 10 10">
+</path>
+</svg>
+</span>
+      FPS Boost
+     </span>
+<span class="tag">
+<span aria-hidden="true" class="tag-icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect height="10" rx="2" ry="2" width="18" x="3" y="7">
+</rect>
+<line x1="3" x2="21" y1="12" y2="12">
+</line>
+<rect height="4" rx="1" ry="1" width="4" x="10" y="10">
+</rect>
+</svg>
+</span>
+      Modpack
+     </span>
+</div>
+</div>
+</header>
+<div class="actions">
+<button id="downloadBtn">Download</button>
+</div>
+
+<div class="overlay-box" id="downloadModal" style="display:none;position:fixed;inset:0;background-color:rgba(0,0,0,0.85);z-index:1000;justify-content:center;align-items:center;">
+<div style="background:var(--bg-light);padding:1.5rem 2rem;border-radius:1rem;color:white;text-align:left;min-width:300px;max-width:90%;box-shadow:0 0 10px rgba(0,0,0,0.6);">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+<h2 style="margin:0;font-size:1.2rem;">Download VOID OPTIMIZER</h2>
+<button id="cancelDownload" style="background:none;border:none;color:white;font-size:1.2rem;cursor:pointer;">✕</button>
+</div>
+<div style="margin-bottom:1rem;">
+<label style="display:block;margin-bottom:0.25rem;font-weight:bold;">Game Version</label>
+<div class="custom-select" id="versionSelectBox" style="position:relative;">
+<div id="selectedVersion" style="padding:0.5rem;background:#222;border-radius:0.5rem;cursor:pointer;">Select Version</div>
+<div id="versionOptions" style="display:none;position:absolute;top:100%;left:0;right:0;background:#333;border-radius:0.5rem;margin-top:0.25rem;z-index:10;">
+<div class="option" data-value="1.21" style="padding:0.5rem;cursor:pointer;">1.21</div>
+<div class="option" data-value="1.20.1" style="padding:0.5rem;cursor:pointer;">1.20.1</div>
+</div>
+</div>
+</div>
+<div style="margin-bottom:1.5rem;">
+<label style="display:block;margin-bottom:0.25rem;font-weight:bold;">Mod Loader</label>
+<div class="custom-select" id="loaderSelectBox" style="position:relative;">
+<div id="selectedLoader" style="padding:0.5rem;background:#222;border-radius:0.5rem;cursor:pointer;">Select Loader</div>
+<div id="loaderOptions" style="display:none;position:absolute;top:100%;left:0;right:0;background:#333;border-radius:0.5rem;margin-top:0.25rem;z-index:10;">
+<div class="option" data-value="Fabric" style="padding:0.5rem;cursor:pointer;">Fabric</div>
+</div>
+</div>
+</div>
+<div style="display:flex;justify-content:space-between;gap:1rem;">
+<button class="continue-btn" id="proceedDownload" style="flex:1;background-color:#0099ff;color:white;padding:0.5rem;border:none;border-radius:0.5rem;cursor:pointer;">Download</button>
+<button class="cancel-btn" id="cancelDownloadAlt" style="flex:1;background-color:#555;color:white;padding:0.5rem;border:none;border-radius:0.5rem;cursor:pointer;">Cancel</button>
+</div>
+</div>
+</div>
+
+<div class="tabs">
+<div class="tab active">
+    Description
+   </div>
+</div>
+<div class="content">
+<div class="section">
+<h2>
+</h2>
+<p>
+     VOID OPTIMIZER is a meticulously engineered performance modpack tailored for Minecraft 1.21, utilizing the Fabric 0.16.14 mod loader. Designed with ultra-lightweight architecture, it significantly enhances frame rates offering up to 10x FPS gains while ensuring stability and smoothness across diverse hardware configurations. This pack accelerates chunk loading, eliminates stutter, and maintains high performance even with large entity counts or elevated render distances.
+     <br/>
+<br/>
+     Crafted for both low-end devices and high-performance systems, VOID OPTIMIZER prioritizes gameplay responsiveness, visual clarity, and lag-free exploration without relying on experimental settings or cheat commands. It is easy to install, highly compatible, and ideal for PvP, survival, or creative sessions where maximum performance is critical. With VOID OPTIMIZER, you can experience a streamlined, fast-loading, and visually fluid Minecraft world like never before.
+    </p>
+</div>
+<div class="section">
+<h2>
+     Compatibility
+    </h2>
+<div class="meta-grid">
+<div>
+      Minecraft: 1.21
+     </div>
+<div>
+      Mod Loader: Fabric 0.16.14
+     </div>
+<div>
+      Renderer: LTw Renderer
+     </div>
+<div>
+      Launcher: Pojavlauncher, ZalithLauncher, MinecraftLauncher.
+      </div>
+<div> 
+      Modworks: Serverside, Clientside, Hybrid.
+      </div>
+</div>
+</div>
+<div class="section">
+<h2>
+     Creators
+    </h2>
+<div class="meta-grid">
+<div>
+      Owner: @vcvo_rex (on TikTok)
+     </div>
+</div>
+</div>
+</div>
+<footer>
+   © 2025 VOID OPTIMIZER — A performance-first Fabric 1.21 modpack.
+  </footer>
+<div id="overlay">
+<div class="overlay-box">
+<h2>
+     You are leaving VoidRinth
+    </h2>
+<p>
+     By clicking Continue, you will be redirected to an external site. Are you sure you want to proceed?
+    </p>
+<div class="buttons">
+<button class="continue-btn" id="continueBtn">
+      Continue
+     </button>
+<button class="cancel-btn" id="cancelBtn">
+      Cancel
+     </button>
+</div>
+</div>
+</div>
+
+<script>
+  const downloadBtn = document.getElementById('downloadBtn');
+  const modal = document.getElementById('downloadModal');
+  const cancelBtn = document.getElementById('cancelDownload');
+  const cancelAlt = document.getElementById('cancelDownloadAlt');
+  const proceedBtn = document.getElementById('proceedDownload');
+
+  const versionBox = document.getElementById('versionSelectBox');
+  const versionSelected = document.getElementById('selectedVersion');
+  const versionOptions = document.getElementById('versionOptions');
+  let selectedVersionValue = null;
+
+  const loaderBox = document.getElementById('loaderSelectBox');
+  const loaderSelected = document.getElementById('selectedLoader');
+  const loaderOptions = document.getElementById('loaderOptions');
+  let selectedLoaderValue = null;
+
+  const links = {
+    "1.21-Fabric": "https://shrinkme.ink/EvFOr6",
+    "1.20.1-Fabric": "https://shrinkme.ink/uJyg"
+  };
+
+  function toggleDropdown(box, options) {
+    const display = options.style.display;
+    options.style.display = display === 'block' ? 'none' : 'block';
+  }
+
+  versionBox.addEventListener('click', () => toggleDropdown(versionBox, versionOptions));
+  loaderBox.addEventListener('click', () => toggleDropdown(loaderBox, loaderOptions));
+
+  versionOptions.querySelectorAll('.option').forEach(opt => {
+    opt.addEventListener('click', () => {
+      selectedVersionValue = opt.getAttribute('data-value');
+      versionSelected.textContent = selectedVersionValue;
+      versionOptions.style.display = 'none';
+    });
+  });
+
+  loaderOptions.querySelectorAll('.option').forEach(opt => {
+    opt.addEventListener('click', () => {
+      selectedLoaderValue = opt.getAttribute('data-value');
+      loaderSelected.textContent = selectedLoaderValue;
+      loaderOptions.style.display = 'none';
+    });
+  });
+
+  downloadBtn.addEventListener('click', () => {
+    modal.style.display = 'flex';
+  });
+
+  cancelBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  cancelAlt.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  proceedBtn.addEventListener('click', () => {
+    const key = `${selectedVersionValue}-${selectedLoaderValue}`;
+    const url = links[key];
+
+    if (url) {
+      window.location.href = url;
+    } else {
+      alert("Please select both a version and loader.");
+    }
+  });
+
+  window.addEventListener('click', (e) => {
+    if (!versionBox.contains(e.target)) versionOptions.style.display = 'none';
+    if (!loaderBox.contains(e.target)) loaderOptions.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
